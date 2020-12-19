@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Ventana Emergente Animada</title>
+</head>
+<body>
+	<div class="contenedor">	
+		<article>
+			<h1>Ventana Emergente Animada</h1>
+			
+				<img class="hamburguer" src="img/hamburguesa.svg" alt="">
+				<nav class="menu-navegacion">
+					<button id="btn-abrir-popup" class="btn-abrir-popup"><img src="img/A.jpg" width="30" height="30" style="vertical-align:middle"/>    Opciones para escribir tu mensaje</button>
+					<button id="btn-abrir-popup1" class="btn-abrir-popup1"><img src="img/Clip.jpg" width="30" height="30" style="vertical-align:middle"/>    Adjuntar un archivo cualquiera</button>
+					<button id="btn-abrir-popup2" class="btn-abrir-popup1"><img src="img/Lápiz.jpg" width="30" height="30" style="vertical-align:middle"/>   Nuevo chat</button>
+					<button id="btn-abrir-popup3" class="btn-abrir-popup1"><img src="img/Cara.jpg" width="30" height="30" style="vertical-align:middle"/>    Reacciones</button>
+					<button id="btn-abrir-popup4" class="btn-abrir-popup1"><img src="img/Calendario.jpg" width="30" height="30" style="vertical-align:middle"/>    Calendalizar una reunión</button>
+					<button id="btn-abrir-popup5" class="btn-abrir-popup1"><img src="img/Más.jpg" width="30" height="30" style="vertical-align:middle"/>    Agregar una pestaña</button>	
+				</nav>	
+
+		</article>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>Opciones para escribir tu mensaje</h3>
+				<img src="img/1.png"/>
+				<h4>*Negritas*Cursiva*Subrayado*Tachado*Color de resaltado*Color de fuente*Aumentar y disminuir sangria*Lista de viñetas*Lista en número*</h4>
+			</div>
+		</div>
+
+		<div class="overlay1" id="overlay1">
+			<div class="popup1" id="popup1">
+				<a href="#" id="btn-cerrar-popup1" class="btn-cerrar-popup1"><i class="fas fa-times"></i></a>
+				<h3>Adjuntar Archivos</h3>
+				<img src="img/2.png"/>
+				<h4>Puedes cargar el archivo desde tu dispositivo o desde Drive.</h4>
+			</div>
+		</div>
+
+		<div class="overlay2" id="overlay2">
+			<div class="popup2" id="popup2">
+				<a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup2"><i class="fas fa-times"></i></a>
+				<h3>Nuevo chat</h3>
+				<img src="img/3.png"/>
+				<h4>En cualquier momento le puedes dar clic al icono de "Nuevo chat",buscar el nombre o correo de la persona con la cual quisieras chatear o tambien buscar un grupo en específico o etiqueta.</h4>
+			</div>
+		</div>
+
+		<div class="overlay3" id="overlay3">
+			<div class="popup3" id="popup3">
+				<a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="fas fa-times"></i></a>
+				<h3>Reacciones</h3>
+				<img src="img/4.png"/>
+				<h4>Puedes reaccionar a los mensajes que te manden por el chat de seis maneras distintas como se muestra en la imagen.</h4>
+			</div>
+		</div>
+
+		<div class="overlay4" id="overlay4">
+			<div class="popup4" id="popup4">
+				<a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup4"><i class="fas fa-times"></i></a>
+				<h3>Calendalizar una reunión</h3>
+				<img src="img/5.png"/>
+				<h4>En este apartado puedes calendalizar una reunión con la persona que estés chateando y acordar los detalles de la reunión como por ejemplo: el día, la hora, la duración de la reunión, etc.</h4>
+			</div>
+		</div>
+
+		<div class="overlay5" id="overlay5">
+			<div class="popup5" id="popup5">
+				<a href="#" id="btn-cerrar-popup5" class="btn-cerrar-popup5"><i class="fas fa-times"></i></a>
+				<h3>Agregar una pestaña</h3>
+				<img src="img/6.png"/>
+				<h4>Puedes convertir tus aplicaciónes y archivos favoritos en pestañas en la parte superior del chat y tienes muchas más opciones.</h4>
+			</div>
+		</div>
+
+	</div>
+
+	<script src="popup.js"></script>
+	<script src="menu.js"></script>
+</body>
+</html>
